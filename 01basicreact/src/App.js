@@ -1,8 +1,11 @@
-
+import Chai from './Chai'
 
 function App() {
   return (
+    <>
+    <Chai />
     <h1>Chai aur react | Gaurav Singh Start basic of react</h1>
+    </>
   );
 }
 
