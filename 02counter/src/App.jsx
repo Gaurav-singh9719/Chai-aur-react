@@ -17,10 +17,7 @@ const addValue = () =>{
   }else{
     addValue.disabled();
   }
-  
   // counter = counter+1;
-  
- 
 
 }
 
@@ -38,14 +35,12 @@ const removeValue =() =>{
       <h2>Counter Value: {counter}</h2>
 
       <button onClick = {addValue}>
-        
         Add Value </button>
 
       <br />
       <button
       onClick={removeValue}
       >Remove Value  </button>
-      
     </>
   )
 }
