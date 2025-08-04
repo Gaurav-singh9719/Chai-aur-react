@@ -12,8 +12,12 @@ let [counter, setCounter]  = useState(15)
 // let counter = 5;
 
 const addValue = () =>{
-   
-  setCounter(counter+1)
+  if(counter<20){
+    setCounter(counter+1)
+  }else{
+    addValue.disabled();
+  }
+  
   // counter = counter+1;
   
  
@@ -21,7 +25,12 @@ const addValue = () =>{
 }
 
 const removeValue =() =>{
-  setCounter(counter-1);
+  if(counter>0){
+    setCounter(counter-1);
+  }
+  else{
+    removeValue.disabled();
+  }
 }
   return (
     <>
@@ -36,7 +45,7 @@ const removeValue =() =>{
       <button
       onClick={removeValue}
       >Remove Value  </button>
-      <p>footer: </p>
+      
     </>
   )
 }
